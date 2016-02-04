@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People Info</title>
+</head>
+<body>
+
+<fieldset>
+    <legend>People Info </legend>
+
+<div>
+
+    <form action="process.php" method="post">
+        <p>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name">
+        </p>
+
+        <p>
+            <label for="empId">EMP ID:</label>
+            <input type="number" name="empId">
+        </p>
+
+        <p>
+            <label for="email">Email ID:</label>
+            <input type="email" name="email">
+        </p>
+
+        <p>
+            <label for="designation">Designation:</label>
+            <input type="text" name="designation">
+        </p>
+
+        <p>
+            <label for="department">Department:</label>
+            <input type="text" name="department">
+        </p>
+
+        <p>
+            <label for="reportTo">Report To:</label>
+            <input type="email" name="reportTo">
+        </p>
+
+        <p>
+            <label for="location">Location:</label>
+            <input list="location">
+
+            <datalist id="location">
+            <option value="--Select Here--"></option>
+            <option value="Bengalur"></option>
+            <option value="Hyderbad"></option>
+            <option value="Chennai"></option>
+            <option value="Delhi"></option>
+            <option value="Pune"></option>
+            <option value="Mumbai"></option>
+        </datalist>
+        </p>
+
+        <div>
+
+        </div>
+    </form>
+
+    <nav>
+        <a href="assets.html">Assets Info</a>
+    </nav>
+</div>
+</fieldset>
+
+</body>
+</html>
