@@ -14,22 +14,22 @@
     <form action="process.php" method="post">
         <p>
             <label for="name">Full Name:</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="name">
         </p>
 
         <p>
             <label for="empId">EMP ID:</label>
-            <input type="number" name="empId">
+            <input type="number" name="empId" id="empId">
         </p>
 
         <p>
             <label for="email">Email ID:</label>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email">
         </p>
 
         <p>
             <label for="designation">Designation:</label>
-            <input type="text" name="designation">
+            <input type="text" name="designation" id="designation">
         </p>
 
         <p>
@@ -39,7 +39,7 @@
 
         <p>
             <label for="reportTo">Report To:</label>
-            <input type="email" name="reportTo">
+            <input type="email" name="reportTo" id="reportTo">
         </p>
 
         <p>
@@ -58,8 +58,15 @@
         </p>
 
         <div>
+        <form method='post'>
+        Comment:<br />
+            <textarea name='comment' id='comment'></textarea><br />
 
-        </div>
+            <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+            <input type='submit' value='Submit' />
+        </form>
+       </div>
     </form>
 
     <nav>
